@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Goal : MonoBehaviour
 {
@@ -17,6 +18,10 @@ public class Goal : MonoBehaviour
             c.a = 1;
 
             mat.color = c;
+            if (mat.color == c)
+            {
+                SceneManager.LoadScene("_Scene_0");
+            }
         }
     }
 }
